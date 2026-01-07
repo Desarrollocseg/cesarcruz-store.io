@@ -1,0 +1,71 @@
+#headers1{
+  
+  background-color: blue;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    display: grid;
+}
+
+#nav1{
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+
+#products1{
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+}
+
+#products-table1{
+    
+    border-collapse: separate;
+}
+#products-table1 th, #products-table1 td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+#products-table1 th {
+    background-color: #f2f2f2;
+}
+#products-table1 tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+#products-table1 tr:hover {
+    background-color: #ddd;
+}
+#products-table1 td img {
+    width: 50px;
+    height: auto;
+}
+#products-body1{
+  display: grid;
+} 
+
+#footer-links1{
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+#footer-copy1{
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    display: grid;
+}

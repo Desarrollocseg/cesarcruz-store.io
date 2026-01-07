@@ -1,78 +1,75 @@
-
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF -8">
-    <title>CesarCruz.store</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>CesarCruz.store</title>
+  <link rel="stylesheet" href="src/styles/styles1.css">
+</head>
 
 <body>
 
-<header>
-  <table border="1px">
-    <tr>
-      <td>
-      <h1>mi tienda</h1>
-    </td>
-    <td>
-      <h1>logo</h1>
-    </td>
-    <td>usuario</td>
-    <td>carrito</td>
-  </tr>
-</table>  
-</header>
- 
-<main style="display: grid;">
+<header class="header"id="headers1">
+  <div class="logo">
+    <h1>mi tienda</h1>
+  </div>
 
-<section>
-  <table border="1">
-    <tr>
-      <td>
-      producto
-    </td>
-    <td>
-      descripcion
-    </td>
-    <td>
-      comprar
-    </td>
-    </tr>
-     </table>
-</section>
+  <nav class="nav"id="nav1">
+    <span>usuario</span>
+    <span>carrito</span>
+  </nav>
+</header>
+
+<main class="main">
+
+  <section class="products"id="products1">
+    <h2>Productos</h2>
+
+    <!-- TABLA SOLO PARA DATOS -->
+    <table class="products-table"id="products-table1">
+      <thead>
+        <tr>
+          <th>imagen</th>
+          <th>Producto</th>
+          <th>Descripción</th>
+          <th>Precio</th>
+          <th>Comprar</th>
+        </tr>
+      </thead>
+
+      <tbody id="products-body"id=products-body1">
+        <!-- filas dinámicas -->
+        <tr>
+          <td><img src="" alt=""></td>
+          <td>Pulsera cuero</td>
+          <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nisi velit recusandae provident quod sint commodi officiis, ducimus dicta ratione consequuntur impedit amet, iure adipisci maxime officia veniam. Esse, dignissimos!</td>
+          <td>$35.000</td>
+          <td><button>Comprar</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+
 </main>
 
-<footer style="display: grid;">
-  <section>
-  <table border="1px">
+<footer class="footer">
 
-    <tr>
-      <td>
-        redes
-      </td>
-      <td>
-         ayuda
-      </td>
-      <td>
-        Logo
-      </td>
-      <td>
-        corporativo
-      </td>
-      <td>
-      url <a href="https://desarrollocseg.github.io/cesarcruz-store.io/">online</a>
-    </td>
-    </tr>
-  </table>
- </section>
-  <table border="1" style="display: grid;">
-     <tr>
-    <td>
-  copyright 2025 cesarcruz-store
-  <br>
-  powers by <a href="https://Desarrollocseg.com">desarrollocseg.com </a>
-  </td>
-  </tr>
-  </table>
+  <div class="footer-links" id="footer-links1">
+    <span>Redes</span>
+    <span>Ayuda</span>
+    <span>Corporativo</span>
+    <a href="https://desarrollocseg.github.io/cesarcruz-store.io/">Online</a>
+  </div>
+
+  <div class="footer-copy" id="footer-copy1">
+    <p>
+      © 2025 cesarcruz-store<br>
+      powered by <a href="https://desarrollocseg.com">desarrollocseg.com</a>
+    </p>
+  </div>
+
 </footer>
+
+<script src="js/app.js"></script>
 </body>
 </html>
