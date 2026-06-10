@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta copyright="2026-CESARCRUZ.STORE. All rights reserved. Powered by Desarrollocseg y c101ciberseg">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="description" content="artesanias elaboradas a mano con materiales locales, piezas unicas y limitadas, envios nacionales rapidos y seguros. pulceras, collares, anillos y accesorios con un toque especial.">
+  <meta name="keywords" content="joyeria artesanal, accesorios hechos a mano, materiales locales, piezas unicas, envios nacionales, pulceras, collares, anillos, artesania colombiana">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <title>landing - cesarcruz.store</title>
+</head>
+<body>
+  <header>
+<nav>
+<div id="nav1">
+  
+
+  <img src="doc/img/logo.JPG" alt="Logo" id="logonav">
+</div>
+  <ul id="nav-items">
+
+  <li><button id="btn-colecciones">COLECCIONES</button><li>
+    <script type="text/javascript">
+  const btnColecciones = document.getElementById("btn-colecciones");
+
+  btnColecciones.addEventListener('click', () => {
+    Contenedor.style.display = Contenedor.style.display === 'block' ? 'none' : 'block';
+  });
+  </script>
+
+  <script type="text/javascript" >
+  
+  btnColecciones.addEventListener("click", async () => {
+  
+    const respuesta = await fetch("doc/pages/colecciones.html");
+    const html = await respuesta.text();
+   
+    const parser = new DOMParser();
+    const documento = parser.parseFromString(html, "text/html");
+
+    const vistacolecciones = documento.querySelector("#colecciones-contenedor");
+
+    Contenedor.innerHTML = vistacolecciones.outerHTML;
+    
+    });
+
+ </script>
+ 
+  <li><button id="btn-catalogo">CATÁLOGO</button></li><!---crear-->
+  <li><a href="#">WHATSAPP</a></li><!---enlace-->
+  
+  <ul class="catalogo-nav-items">
+    <li><button id="btn-pulseras">PULSERAS</button></li><!---crear-->
+    <li><button id="btn-collares">COLLARES</button></li><!---crear-->
+    <li><button id="btn-anillos">ANILLOS</button></li><!---crear--> 
+    <li><button id="btn-accesorios">ACCESORIOS</button></li><!--crear-->
+  </ul>
+  </ul>
+</nav>
+
+<script type="text/javascript">
+    const btnCatalogo = document.getElementById("btn-catalogo");
+    const catalogoNavItems = document.querySelector(".catalogo-nav-items");
+
+btnCatalogo.addEventListener('click', () => {
+  catalogoNavItems.style.display = catalogoNavItems.style.display === "block" ? "none" : "block";
+  });
+  </script>
+  
+  </header>
+<main>
+
+  <section id="primera">
+    <div id="categorias"></div>
+    
+<script type="text/javascript">
+    const btnPulseras = document.getElementById("btn-pulseras");
+    const btnCollares = document.getElementById("btn-collares");
+    const btnAnillos = document.getElementById("btn-anillos");
+    const btnAccesorios = document.getElementById("btn-accesorios");
+
+    const Contenedor = document.getElementById("categorias");
+</script>
+<script type="text/javascript">
+btnPulseras.addEventListener("click", () => {
+ Contenedor.style.display = Contenedor.style.display === "block" ? "none" : "block";
+});
+ 
+btnPulseras.addEventListener("click", async () => {
+  
+    const respuesta = await fetch("doc/pages/catalogo.html");
+    const html = await respuesta.text();
+   
+    const parser = new DOMParser();
+    const documento = parser.parseFromString(html, "text/html");
+
+    const vistapulseras = documento.querySelector("#pulseras");
+
+    Contenedor.innerHTML = vistapulseras.outerHTML;
+    
+    });
+</script>
+<script type="text/javascript">
+btnCollares.addEventListener("click", () => {
+ Contenedor.style.display = Contenedor.style.display === "block" ? "none" : "block";
+}); 
+
+btnCollares.addEventListener("click", async () => {
+  
+    const respuesta = await fetch("doc/pages/catalogo.html");
+    const html = await respuesta.text();
+   
+    const parser = new DOMParser();
+    const documento = parser.parseFromString(html, "text/html");
+
+    const vistacollares = documento.querySelector("#collares");
+
+    Contenedor.innerHTML = vistacollares.outerHTML;
+    
+    });
+
+    
+</script>
+<script type="text/javascript">
+
+btnAnillos.addEventListener("click", () => {
+ Contenedor.style.display = Contenedor.style.display === "block" ? "none" : "block";
+}); 
+btnAnillos.addEventListener("click", async () => {
+  
+    const respuesta = await fetch("doc/pages/catalogo.html");
+    const html = await respuesta.text();
+   
+    const parser = new DOMParser();
+    const documento = parser.parseFromString(html, "text/html");
+
+    const vistaanillos = documento.querySelector("#anillos");
+
+    Contenedor.innerHTML = vistaanillos.outerHTML;
+    
+    });
+</script>
+<script type="text/javascript">
+
+btnAccesorios.addEventListener("click", () => {
+ Contenedor.style.display = Contenedor.style.display === "block" ? "none" : "block";
+}); 
+btnAccesorios.addEventListener("click", async () => {
+  
+    const respuesta = await fetch("doc/pages/catalogo.html");
+    const html = await respuesta.text();
+   
+    const parser = new DOMParser();
+    const documento = parser.parseFromString(html, "text/html");
+
+    const vistaaccesorios = documento.querySelector("#accesorios");
+
+    Contenedor.innerHTML = vistaaccesorios.outerHTML;
+    
+    });
+</script>
+
+    <div id="contenedor">
+          <img src="doc/img/logo.JPG" alt="Logo" id="logoseccion">
+
+  <article id="introduccion">
+    <h1 id="t1">CESARCRUZ.STORE</h1>
+    <h2 id="t1">Bienvenid@ a mi taller</h2>
+    <p id="t1"> Joyeria artesanal y accesorios elaborados con pasion 100% a mano con materiales locales 🇨🇴.</p>
+  </article>
+</div>  
+
+
+
+
+  <article id="titulo2">
+  <h3>Piezas artesanales y únicas</h3>
+  </article>
+
+  
+
+
+
+  <div id="tarjetas-contenedor">
+    
+  <article id="tarjeta">
+    <h4>HECHO A MANO</h4>
+    <img src="doc/img/introduccion1.jpeg" alt=""> 
+     <p id="t1">Cada pieza es elaborada con las manos artifices y dedicadas del artesano,tomando el tiempo, dedicacion  y detalle como maetros. El hacer a mano cada pieza conecta con una nesecidad espiritual que no se da  en la produccion industrial, cada pieza es un reflejo de la pasion y el arte del artesano.
+     Esto aporta un valor estetico y artesanal a las piezas, haciendo que cada una sea unica y especial.
+     </P>
+      </article>
+  </article>
+  <article id="tarjeta">
+    
+    <h4>SUS MATERIALES Y PROCESOS</h4>
+     <img src="doc/img/introduccion2.jpeg" alt="">
+     <p id="t1">Busco que los materiales sean  de caracter local, naturales y amigables con el ambiente, trabajo metales como el cobre, la alpaca y el bronce, tambien piedras y cristales como el cuarzo, amatista,onix entre otros.
+      Tecnicas como el macrame, el crochet, martillado, el repujado, el calado son parte de los procesos que se utilizan para dar forma a cada pieza.
+     </P>
+  </article>
+  <article id="tarjeta">
+        <h4>PRODUCTOS LIMITADOS</h4>
+    <img src="doc/img/introduccion3.jpeg" alt="">
+     <p id="t1">Las piezas son limitadas ya que no se trata de producción en cantidad, la joyería artesanal y de accesorios no busca competir, mi objetivo es la entrega de valor y calidad.
+      Cada pieza es única y especial siendo el  resultado de un proceso creativo y dedicado, lo que hace que cada pieza sea limitada y exclusiva con la esencia del artesano viajero.
+     </P>
+  </article>
+
+  <article id="tarjeta">
+    <h4>ENVIOS NACIONALES</h4>
+    <img src="doc/img/introduccion4.jpeg" alt="">
+    <p id="t1">Ofrecemos envíos a todo el país con rapidez y seguridad.
+      Nos aseguramos de que cada pieza llegue a su destino en perfectas condiciones, utilizando embalajes adecuados para proteger la joyería durante el transporte.
+      Además, ofrecemos opciones de seguimiento para que puedas estar al tanto del estado de tu envío en todo momento.
+    </p>
+  </article>
+  </div>
+  </section>
+
+   <section id="segunda">
+    <article>
+      <h3 id="titulo2">MAS DE CESARCRUZ.STORE</h3>
+      <p>Descubre más sobre nuestro taller y los procesos detrás de cada pieza.</p>
+     
+    <div id="botones-contenedor">
+      <ul>
+        
+       <li><button id="btn-instagram"><a href="https://instagram.com/cesarcruz.store" target="_blank">Instagram</a></button></li><!---enlace-->
+      </ul>
+    </div>
+    </article>
+   </section>
+  </main>
+
+<footer>
+<section  id="contenerdorfooter">
+  <div id="logofooter">
+    <img src="doc/img/logo.JPG" alt="Logo" id="logof">
+  </div>
+  <article id="foot1">
+  <h4>SUSCRIBETE</h4>
+  <ul>
+    <li><a href="https://facebook.com/CesarCruzStore" target="_blank">Facebook</a></li><!---enlace-->
+    <li><a href="https://instagram.com/cesarcruz.store" target="_blank">Instagram</a></li><!---enlace-->
+  </ul>
+</article>
+<article id="foot2">
+  <h4>PARA LOS USUARIOS</h4>
+  <ul>
+    <li><a href="legal/terms.html">Terms of Service</a></li><!---crear-->
+    <li><a href="legal/privacy.html">Privacy Policy</a></li><!---crear-->
+  </ul>
+</article>
+<br>
+  <article id="foot3">  
+    <br>
+    <p>&copy; 2026-CESARCRUZ.STORE. All rights reserved. <br> Powered by <a href="https://desarrollocseg.github.io" target="_blank" style="color: orangered;">Desarrollocseg</a></p> </article>
+
+</section>
+
+</footer>
+
+</body>
+</html>
